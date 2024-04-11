@@ -4,12 +4,11 @@ using System.Drawing;
 namespace ColorSpheres
 {
     class Color{
-        private byte r;
-        private byte g;
-        private byte b;
-        private byte a;
-
-        private byte alphaMax;
+        private readonly byte r;
+        private readonly byte g;
+        private readonly  byte b;
+        private readonly byte a;
+        private const byte aplhamax = 255;
         public Color(byte red,byte green,byte blue,byte alpha){
             r = red;
             g = green;
@@ -21,7 +20,7 @@ namespace ColorSpheres
             r = red;
             g = green;
             b = blue;
-            a = alphaMax;
+            a = aplhamax;
 
         } 
         public byte getred(){

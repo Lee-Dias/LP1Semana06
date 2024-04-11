@@ -4,13 +4,15 @@ using System.Drawing;
 namespace ColorSpheres
 {
     class Sphere{
-        private Color cor;
+        private readonly Color cor;
         private float raio;
-        private int quantasVezesAtirada;
+        private  int quantasVezesAtirada;
+
+        private  const int quantasVezesAtiradamin = 0;
         public Sphere(Color cor,float r){
             this.cor = cor;
             raio = r;
-            quantasVezesAtirada = 0;
+            quantasVezesAtirada = quantasVezesAtiradamin;
 
         }  
         
