@@ -1,10 +1,10 @@
 using System;
 using System.Drawing;
 
-namespace ColorSpheres
+namespace BetterColorSpheres
 {
     class Color{
-        private readonly byte r;
+        private readonly byte r ;
         private readonly byte g;
         private readonly  byte b;
         private readonly byte a;
@@ -23,24 +23,33 @@ namespace ColorSpheres
             a = aplhamax;
 
         } 
-        public byte getred(){
-            return r;
+        public byte GetRed{
+            get{
+                return r;
+            }     
         }
-        public byte getgreen(){
-            return g;
+        public byte GetGreen{
+            get{
+                return g;
+            }
         }
         
-        public byte getblue(){
-            return b;
+        public byte GetBlue{
+            get{
+                return b;
+            }
         }
-        public byte getalpha(){
-            return a;
+        public byte GetAlpha{
+            get{
+                return a;
+            }
         }
-        public byte getgrey(){
-            int media = (r+g+b)/3;
-            byte grey = (byte)media;
-            return grey;
+
+        public int GetGrey(int red, int green, int blue){
+            return (red+green+blue)/3;
         }
+            
+        
         
 
     }

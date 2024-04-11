@@ -22,9 +22,9 @@ namespace ColorSpheres
             greenSphere.Throw();
             greenSphere.Throw();
             greenSphere.Throw();
-            RedSphere.GerTimesThrown();
-            greenSphere.GerTimesThrown();
-            blueSphere.GerTimesThrown();
+            RedSphere.GetTimesThrown();
+            greenSphere.GetTimesThrown();
+            blueSphere.GetTimesThrown();
 
 
             

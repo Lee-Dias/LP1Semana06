@@ -15,7 +15,6 @@ namespace ColorSpheres
             quantasVezesAtirada = quantasVezesAtiradamin;
 
         }  
-        
         public void pop(){
             Console.WriteLine("Sphere was popped");
             raio = 0f;
@@ -29,7 +28,7 @@ namespace ColorSpheres
             }
 
         }
-        public void GerTimesThrown(){
+        public void GetTimesThrown(){
             Console.WriteLine($"Sphere was Thrown {quantasVezesAtirada} times");
         }
 
