@@ -27,14 +27,13 @@ namespace PlayerStats
         public float WinRate{
             get
             {
-                return WinRate;
-            }set{
-                if (playedGames == 0)
-                {
-                    return;
-                }else{
-                    WinRate = wonGames/playedGames;
+                if (playedGames == 0){
+                    return 0;
+                }        
+                else{
+                    return (float)wonGames/ playedGames;
                 }
+                
             }
         }
 
