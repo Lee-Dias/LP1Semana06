@@ -15,13 +15,20 @@ namespace ColorSpheres
         }  
         
         public void pop(){
+            Console.WriteLine("Sphere was popped");
             raio = 0f;
         }
         public void Throw(){
-            if (raio > 0) quantasVezesAtirada +=1;
+            if (raio > 0){
+                quantasVezesAtirada +=1; 
+                Console.WriteLine("Sphere was Thrown");
+            } else{
+                Console.WriteLine("Sphere is popped cannot be thrown");
+            }
+
         }
-        public int GerTimesThrown(){
-            return quantasVezesAtirada;
+        public void GerTimesThrown(){
+            Console.WriteLine($"Sphere was Thrown {quantasVezesAtirada} times");
         }
 
     }

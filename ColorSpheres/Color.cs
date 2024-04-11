@@ -1,22 +1,23 @@
 using System;
+using System.Drawing;
 
 namespace ColorSpheres
 {
-    class ColorSpheres{
+    class Color{
         private byte r;
         private byte g;
         private byte b;
         private byte a;
 
         private byte alphaMax;
-        public ColorSpheres(byte red,byte green,byte blue,byte alpha){
+        public Color(byte red,byte green,byte blue,byte alpha){
             r = red;
             g = green;
             b = blue;
             a = alpha;
 
         }         
-        public ColorSpheres(byte red,byte green,byte blue){
+        public Color(byte red,byte green,byte blue){
             r = red;
             g = green;
             b = blue;
