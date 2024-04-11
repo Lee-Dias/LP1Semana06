@@ -8,7 +8,7 @@ namespace BetterColorSpheres
         private readonly byte g;
         private readonly  byte b;
         private readonly byte a;
-        private const byte aplhamax = 255;
+        private const byte aplhaMax = 255;
         public Color(byte red,byte green,byte blue,byte alpha){
             r = red;
             g = green;
@@ -20,7 +20,7 @@ namespace BetterColorSpheres
             r = red;
             g = green;
             b = blue;
-            a = aplhamax;
+            a = aplhaMax;
 
         } 
         public byte GetRed{

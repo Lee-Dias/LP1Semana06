@@ -8,12 +8,12 @@ namespace BetterColorSpheres
         private float raio;
         private  int quantasVezesAtirada;
 
-        private  const int quantasVezesAtiradamin = 0;
+        private  const int quantasVezesAtiradaMin = 0;
         private  const float raioreset = 0f;
         public Sphere(Color cor,float r){
             this.cor = cor;
             raio = r;
-            quantasVezesAtirada = quantasVezesAtiradamin;
+            quantasVezesAtirada = quantasVezesAtiradaMin;
 
         }  
         public float Pop{
